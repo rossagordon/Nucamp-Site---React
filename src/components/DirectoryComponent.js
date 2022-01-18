@@ -33,20 +33,20 @@ class Directory extends Component {
                     elevation: 42,
                     description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
                 }
-            ],
+            ]
         };
     }
 
     render() {
         const directory = this.state.campsites.map(campsite => {
             return (
-                <div key={campsite.id} className="col">
-                    <img src={campsite.image} alt={campsite.name} />
+                <div key ={campsite.id} className="col">
+                    <img src = {campsite.image} alt={campsite.name} />
                     <h2>{campsite.name}</h2>
                     <p>{campsite.description}</p>
                 </div>
-            );
-        });
+            )
+        })
 
         return (
             <div className="container">
