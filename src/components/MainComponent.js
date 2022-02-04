@@ -9,15 +9,14 @@ import About from "./AboutComponent";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import { connect } from 'react-redux';
 
-class mapStateToProps = state => {
+const mapStateToProps = state => {
   return {
-    campsties: state.campsites,
-    comments: state.comments,
-    partners: state.partners,
-    promotions: state.promotions
-
-  }
-}
+      campsites: state.campsites,
+      comments: state.comments,
+      partners: state.partners,
+      promotions: state.promotions
+  };
+};
 
 class Main extends Component {
 
